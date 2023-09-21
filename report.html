@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        pre {
+            font-size: 15px;
+            color: black;
+            background-color: whitesmoke;
+        }
+
+        img {
+            width: 550px;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: Georgia, serif;
+        }
+
+        b {
+            font-size: 20px;
+            font-family: Georgia, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+        <b> Program on CSS Flex Property</b>
+        <code>  
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Document&lt;/title&gt;
+            &lt;script&gt;
+            function grade(){
+            var sub1=parseInt(document.getElementById("sub1").value);
+            var sub2=parseInt(document.getElementById("sub2").value);
+            var sub3=parseInt(document.getElementById("sub3").value);
+            var result ="";
+            if (sub1 &gt; 34 && sub2 &gt; 34 && sub3 &gt; 34)
+            {
+                var total =(sub1+sub2+sub3);
+                var avg =Math.round(total/3);
+                if(avg&gt;=75)
+                {
+                    result="Congratulations!! The student passed with Distinction!!";
+                }
+                else if(avg &gt;=60)
+                {
+                    result ="The student passed in First Class!!";
+                }
+                else if (avg&gt;=50){
+                    result="The student passed in Second Class!!";
+                }
+                else if(avg&gt;=40) {
+                    result="The student passed in Third Class!!";
+                }
+                else{
+                    result="Enter valid Details";
+                }
+            document.getElementById("totavg").innerHTML="The total marks are "+total+" and average is "+avg;
+            }
+            else{
+                result="The student has Failed!!";
+            }
+            document.getElementById("result").innerHTML=result;           
+            }
+            &lt;/script&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;center&gt;
+            &lt;h1&gt;Report Card System&lt;/h1&gt; &lt;br&gt;
+            &lt;h2&gt; Enter Marks &lt;/h2&gt;
+            Enter the Subject1: &lt;input type="text" id="sub1"&gt;&lt;br&gt; &lt;br&gt;
+            Enter the Subject2: &lt;input type="text" id="sub2"&gt;&lt;br&gt; &lt;br&gt;
+            Enter the Subject3: &lt;input type="text" id="sub3"&gt;&lt;br&gt; &lt;br&gt;
+            &lt;button onclick="grade()"&gt;Generate Report&lt;/button&gt;
+            &lt;h3 id="totavg"&gt;&lt;/h3&gt;
+            &lt;h3 id="result"&gt;&lt;/h3&gt;
+            &lt;/center&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+    </code>
+      <div class="imgdiv">
+        <p>Output:</p>
+        <img src="images/report.jpg" alt="hello">
+    </div>
+</pre>
+</body>
+
+</html>
